@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "FanFiction Chapter Navigator",
+  "version": "1.0",
+  "description": "Navigate to the previous and next chapters on FanFiction.net using the right and left arrow keys.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.fanfiction.net/s/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
